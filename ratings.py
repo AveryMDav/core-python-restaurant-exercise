@@ -5,13 +5,12 @@ def get_scores():
     score = open('scores.txt')
     scores = {}
     for i in score:
-        i = i.rstrip() 
         restaurant, score = i.split(':')
         scores[restaurant] = int(score)
     
-    add_restaurants(scores)
+    new_scores = add_restaurants(scores)
 
-    return display_restaurants(sorted(scores.items()))
+    return display_restaurants(sorted(new_scores.items()))
 
 
 def display_restaurants(scores):
