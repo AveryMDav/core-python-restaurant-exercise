@@ -19,7 +19,7 @@ def start_up():
             return start_up()
 
     elif options == 3:
-        print('3')
+        return
 
     else:
         print("This is not a valid option")
