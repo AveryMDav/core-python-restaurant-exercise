@@ -21,11 +21,10 @@ def display_restaurants(scores):
 
 
 def add_restaurants():
-    new_scores = []
+    new_scores = {}
     new = input("Would you like to add a new review? Yes or No:\n").lower()
     
     if new == "yes":
-        new_scores = {}
         new_name = input("What is the restaurants name?\n").capitalize()
         new_rating = input("What would you rate this resaurant between 1-5?\n")
         new_scores[new_name] = new_rating
